@@ -14,7 +14,7 @@ static void draw_active_profile(lv_obj_t *canvas, const struct status_state *sta
     lv_draw_rect_dsc_t rect_white_dsc;
     init_rect_dsc(&rect_white_dsc, LVGL_FOREGROUND);
 
-    int offset = state->active_profile_index * 7;
+    int offset = state->layer_index * 7;
 
     lv_canvas_draw_rect(canvas, 18 + offset, 129 + BUFFER_OFFSET_BOTTOM, 3, 3, &rect_white_dsc);
 }
