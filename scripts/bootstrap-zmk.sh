@@ -5,7 +5,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 WORKSPACE_DIR="${ZMK_WORKSPACE:-${REPO_ROOT}/.zmk-workspace}"
 ZMK_DIR="${ZMK_DIR:-${WORKSPACE_DIR}/zmk}"
 ZMK_REPO="${ZMK_REPO:-https://github.com/zmkfirmware/zmk.git}"
-ZMK_REF="${ZMK_REF:-main}"
+ZMK_REF="${ZMK_REF:-v0.3.0}"
 ZMK_MANIFEST_FILE="${ZMK_MANIFEST_FILE:-app/west.yml}"
 ZMK_VENV_DIR="${ZMK_VENV_DIR:-${WORKSPACE_DIR}/.venv}"
 

@@ -20,6 +20,11 @@ bash scripts/bootstrap-zmk.sh
 ```
 
 This creates `.zmk-workspace/` and initializes `west` using `zmk/app`.
+By default, the script uses ZMK `v0.3.0`. Override with `ZMK_REF`, for example:
+
+```bash
+ZMK_REF=main bash scripts/bootstrap-zmk.sh
+```
 
 2. Build using your `zmk-config` repo:
 
