@@ -40,8 +40,10 @@ void draw_animation(lv_obj_t *canvas) {
     int length = sizeof(anim_imgs) / sizeof(anim_imgs[0]);
     srand(k_uptime_get_32());
     int random_index = rand() % length;
+    int configured_index = (CONFIG_NICE_VIEW_GEM_ANIMATION_FRAME - 1) % length;
+    int anim_imgs_index = CONFIG_NICE_VIEW_GEM_ANIMATION_FRAME > 0 ? configured_index : random_index;
 
-    lv_img_set_src(art, anim_imgs[random_index]);
+    lv_img_set_src(art, anim_imgs[anim_imgs_index]);
 #endif
 
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 36, 0);

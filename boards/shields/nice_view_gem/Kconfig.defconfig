@@ -39,6 +39,10 @@ config NICE_VIEW_GEM_ANIMATION
     bool "Enable animation on peripheral"
     default y
 
+config NICE_VIEW_GEM_ANIMATION_FRAME
+    int "Frame index (out of 16) to use if animation is disabled"
+    default 0
+
 config NICE_VIEW_GEM_ANIMATION_MS
     int "Animation length in milliseconds"
     default 960
