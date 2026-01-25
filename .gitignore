@@ -1,1 +1,10 @@
 .vscode/
+.codex/
+
+# Local ZMK workspace/bootstrap artifacts
+.zmk-workspace/
+
+# Local build outputs
+build/
+*.log
+.DS_Store

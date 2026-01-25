@@ -1,0 +1,35 @@
+{
+  "name": "nice-view-gem (ZMK)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": {
+      "USER_UID": "1000",
+      "USER_GID": "1000",
+      "ZEPHYR_SDK_VERSION": "0.16.5"
+    }
+  },
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "CCACHE_DIR": "/workspaces/.ccache"
+  },
+  "mounts": [
+    "source=nice-view-gem-ccache,target=/workspaces/.ccache,type=volume",
+    "source=/home/carlos/code/zmk_config/zmk-config,target=/workspaces/zmk-config,type=bind,consistency=cached"
+  ],
+  "postCreateCommand": "bash scripts/devcontainer-post-create.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-python.python"
+      ],
+      "settings": {
+        "cmake.configureOnOpen": false,
+        "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+      }
+    }
+  }
+}

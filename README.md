@@ -53,6 +53,10 @@ CONFIG_ZMK_DISPLAY=y
 CONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM=y
 ```
 
+## Local Development
+
+If you want to build locally instead of waiting for GitHub Actions, use the included devcontainer setup and follow `docs/local-dev.md`.
+
 ## Configuration
 
 Modify the behavior of this shield by adjusting these options in your personal configuration files. For a more detailed explanation, refer to [Configuration in the ZMK documentation](https://zmk.dev/docs/config).
