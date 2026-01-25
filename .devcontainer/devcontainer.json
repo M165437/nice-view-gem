@@ -14,6 +14,11 @@
   "containerEnv": {
     "CCACHE_DIR": "/workspaces/.ccache"
   },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
   "mounts": [
     "source=nice-view-gem-ccache,target=/workspaces/.ccache,type=volume",
     "source=/home/carlos/code/zmk_config/zmk-config,target=/workspaces/zmk-config,type=bind,consistency=cached"
@@ -25,7 +30,8 @@
         "ms-vscode.cpptools",
         "ms-vscode.cmake-tools",
         "ms-python.python",
-        "openai.chatgpt"
+        "openai.chatgpt",
+        "Upstash.context7-mcp"
       ],
       "settings": {
         "cmake.configureOnOpen": false,
