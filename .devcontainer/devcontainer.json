@@ -24,7 +24,8 @@
       "extensions": [
         "ms-vscode.cpptools",
         "ms-vscode.cmake-tools",
-        "ms-python.python"
+        "ms-python.python",
+        "openai.chatgpt"
       ],
       "settings": {
         "cmake.configureOnOpen": false,
