@@ -14,7 +14,12 @@ Add this shield to your keymap repo (see usage below) and run the GitHub action 
 
 ## Usage
 
-To use this shield, first add it to your `config/west.yml` by adding a new entry to remotes and projects:
+To use this shield, first add it to your `config/west.yml` by adding a new entry to remotes and projects.
+
+Always pin both ZMK and this module to matching revisions.
+
+- ZMK `v0.3` → use release `v0.3.0`
+- ZMK `main` (Zephyr 4.1+) → use the `main` branch
 
 ```yml
 manifest:
