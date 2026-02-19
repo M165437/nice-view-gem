@@ -7,7 +7,7 @@ LV_IMG_DECLARE(gauge);
 LV_IMG_DECLARE(grid);
 
 static void draw_gauge(lv_obj_t *canvas, const struct status_state *state) {
-    lv_draw_image_dsc_t img_dsc;
+    lv_draw_img_dsc_t img_dsc;
     lv_draw_image_dsc_init(&img_dsc);
 
     canvas_draw_img(canvas, 16, 44 + BUFFER_OFFSET_MIDDLE, &gauge, &img_dsc);
@@ -53,7 +53,7 @@ static void draw_needle(lv_obj_t *canvas, const struct status_state *state) {
 }
 
 static void draw_grid(lv_obj_t *canvas) {
-    lv_draw_image_dsc_t img_dsc;
+    lv_draw_img_dsc_t img_dsc;
     lv_draw_image_dsc_init(&img_dsc);
 
     canvas_draw_img(canvas, 0, 65 + BUFFER_OFFSET_MIDDLE, &grid, &img_dsc);
